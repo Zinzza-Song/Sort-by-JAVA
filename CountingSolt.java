@@ -1,11 +1,13 @@
 
 public class CountingSolt {
 
+	private int[] arr;
+	
 	public CountingSolt(int[] arr) {
-		sort(arr);
+		this.arr = arr;
 	}
 
-	int[] sort(int[] arr) {
+	int[] sort() {
 		int max = 0;
 		for (int k : arr)
 			max = Math.max(max, k);
