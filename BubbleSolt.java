@@ -1,11 +1,13 @@
 
 public class BubbleSolt {
 
+	private int[] arr;
+	
 	public BubbleSolt(int[] arr) {
-		sort(arr);
+		this.arr = arr;
 	}
 	
-	int[] sort(int[] arr) {
+	int[] sort() {
 		int temp = 0; // 빈공간
 
 		for (int i = 0; i < arr.length - 1; ++i) {
